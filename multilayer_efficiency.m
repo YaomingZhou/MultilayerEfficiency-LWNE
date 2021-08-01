@@ -15,7 +15,7 @@ while max(weight)>0
         effi_0=effi(end);
     else
         G_sub=graph(so_sub,do_sub);
-        distanceMatrix=distances(G_sub);
+        distanceMatrix=distances(G_sub); %distance is a built-in function of Matlab
         n=size(distanceMatrix,1);
         distance=distanceMatrix(:);
         distance(1:n+1:n*n)=[];  % delete the 0 value on the diagonal
