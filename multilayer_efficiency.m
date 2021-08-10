@@ -18,7 +18,7 @@ while max(weight)>0
         distanceMatrix=distances(G_sub); %distance is a built-in function of Matlab
         n=size(distanceMatrix,1);
         distance=distanceMatrix(:);
-        distance(1:n+1:n*n)=[];  % delete the 0 value on the diagonal
+        distance(1:n+1:n*n)=[];  % delete the 0 values on the diagonal
         effi_0=effi_0+sum(1./distance);
     end
     NumofLink=length(so_sub);
